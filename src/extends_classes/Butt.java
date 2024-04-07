@@ -35,12 +35,14 @@ public class Butt extends JButton {
 			g.drawLine(25, 10, 15, 20);
 			
 		}
+		
 		//  max button
 		else if (id == 11 ) {
 			g.setColor(Color.DARK_GRAY );
 		    g.drawRect(15, 10, 9, 9);
 			
 		}
+
 		// hide button
 		else if (id == 12 ) {
 			
@@ -58,6 +60,7 @@ public class Butt extends JButton {
 			g.drawLine(10, 14, 17, 21);
 			
 		}
+
 		// home butt
 		else if (id == 14 ) {
 		
@@ -76,33 +79,31 @@ public class Butt extends JButton {
 			g.setFont(new Font("Malgun Gothic Bold", Font.PLAIN, 10));
 			g.drawString("Dashboard", 20, 20);
 		}
-		
-		
 	}
 	
-	
-	
 	//getters an setters
-	
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	public boolean isChecked() {
 		return checked;
 	}
+
 	public void setChecked(boolean checked) {
 		this.checked = checked;
 	}
-
 
 	//  ** Constructors ***
  	public Butt() {
  		this.setFont(new Font("Calibr", Font.BOLD, 12));
  		this.setForeground(Color.cyan);
 	}
+
  	public Butt(int x, int y, int width, int heigth, Color c ) {
  		this.setFont(new Font("calibr", Font.BOLD, 12));
  		this.setForeground(Color.cyan);
@@ -120,6 +121,7 @@ public class Butt extends JButton {
 		this.setBorder(BorderFactory.createMatteBorder(0,0,0,0, Color.black));
 		
 	}
+
 	public Butt(int x, int y, int width, int heigth, int id, boolean checked, Color c ) {
  		this.setFont(new Font("Calibr", Font.BOLD, 12));
  		this.setForeground(Color.cyan);
